@@ -1,0 +1,41 @@
+/* Avisos */
+.header-foto, .left-foto,.center-foto, .right-foto, .bottom-center-foto, .bottom-right-foto{
+ background-image: url("../images/5417.jpg");
+}
+.col-md-4, .col-md-8{
+  padding: 3px;
+}
+.blueberry{
+  width:100%;
+}
+.blueberry .pager {
+    display: none;
+    height: 40px;
+    text-align: center;
+}
+
+.img-blueberry{
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  border-radius: 0px;
+}
+
+ol, ul {
+    margin-top: 0;
+    margin-bottom: 7px;
+    margin-top: -15px;
+    padding: 0px;
+}
+
+.blueberry .slides li img {
+    display:table-caption;
+    width: 100%;
+
+}
+
+#slides {
+  height: 100%;
+  width: 100%;
+  margin-bottom: 25px;
+}

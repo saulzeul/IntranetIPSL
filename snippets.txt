@@ -1,0 +1,68 @@
+//---Leer json_encode php desde jquery
+$.ajax({
+  data:{"link": "link"},
+  type: "GET",
+  dataType: "JSON",
+  url: "Login/iniciar_sesion",
+});
+var link: link,
+window.location.href = "http://ipsl-adm-dsk-21/code-debian/panel#!/" + encodeURIComponent(link);
+
+//-- json_encode desde php
+$link = "dash";
+echo json_encode($link);
+
+//--switch jquery funcionando pero no lo deje porque muestra los links de acceso a los usuarios y es una mala practica de JS
+switch (resp) {
+  case "rh":
+    window.location.href = "http://ipsl-adm-dsk-21/code-debian/panel#!/capacitacion";
+    break;
+  case "sistemas":
+    window.location.href = "http://ipsl-adm-dsk-21/code-debian/panel#!/dash";
+    break;
+}
+// No redirecciona si no hay nada en el else si no funciona quitar el id del login
+//window.location.href = "http://ipsl-adm-dsk-21/code-debian/panel#!/" //para Redireccionar a cierto modulo agregar /dash
+
+//Formulario login
+<div id="" class="active">
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav " id="sidebar" style="padding-top:50px;">
+						<?php if ($tipo_usuario == 'sistemas') {?>
+						<li><a id="refresh-dash" href="#!/dash" data-toggle="tooltip" data-placement="right" title="Dashboard"><span class="sub_icon fa fa-tachometer"></span></a></li>
+						<li><a id="refresh-soporte" href="#!/soporte" data-toggle="tooltip" data-placement="right" title="Soporte"><span class="sub_icon fa fa-check-square-o"></a></li>
+						<li><a id="refresh-administracion" href="#!/administracion" data-toggle="tooltip" data-placement="right" title="Administracion"><span class="sub_icon fa fa-users"></span></a></li>
+						<li><a id="refresh-inventario" href="#!/inventario" data-toggle="tooltip" data-placement="right" title="Inventario"><span class="sub_icon fa fa-desktop"></span></a></li>
+						<li><a id="refresh-proveedores" href="#!/proveedores" data-toggle="tooltip" data-placement="right" title="Proveedores"><span class="sub_icon fa fa-handshake-o"></span></a></li>
+						<li><a id="refresh-configuracion" href="#!/configuracion" data-toggle="tooltip" data-placement="right" title="Configuracion"><span class="sub_icon glyphicon glyphicon-cog"></span></a></li>
+						<?php } ?>
+						<?php if ($tipo_usuario == 'rh') {?>
+					  <li><a id="refresh-capacitacion" href="#!/capacitacion" data-toggle="tooltip" data-placement="right" title="Capacitacion"><span class="sub_icon fa fa-group"></span></a></li>
+					  <li><a id="refresh-avisos" href="#!/avisos" data-toggle="tooltip" data-placement="right" title="Avisos"><span class="sub_icon fa fa-edit"></span></a></li>
+						<?php } ?>
+        </ul>
+      </div>
+</div>
+
+
+Menu con submenu funcionando pero no me gusto
+
+<li class="btn-group">
+  <a class="dropdown-toggle" data-toggle="dropdown">
+    <span class="sub_icon fa fa-desktop" ></span>
+  </a>
+  <ul class="menu-rol dropdown-menu" style="margin: 0px -15px;">
+    <li><a href="#!/capacitacion">Sala de capacitacion</a></li>
+    <li><a href="#!/avisos">Avisos</a></li>
+  </ul>
+</li>
+
+css
+.menu-rol{
+  top: 0;
+  left: 100%;
+  margin: 0px -15px;
+  border-radius: 0px;
+  background: black;
+  padding-right: 40px;
+}

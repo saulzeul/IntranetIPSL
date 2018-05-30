@@ -1,0 +1,60 @@
+#men-act-evento{
+  position: fixed;
+  left: 79%;
+  margin-top: -35px;
+  padding: 10px;
+  border-radius: 0px;
+  color: #fbfbfb;
+  background-color: #54ac30;
+  border-color: #54ac30;
+}
+
+#men-elim-evento{
+  position: fixed;
+  left: 79%;
+  margin-top: -35px;
+  padding: 10px;
+  border-radius: 0px;
+  color: #fbfbfb;
+  background-color: #b22222;
+  border-color: #b22222;
+}
+
+#calendar {
+  max-width: 570px;
+  margin: 0 auto;
+  float: right;
+  padding-right: 3%;
+}
+
+.fc-center h2 {
+  font-size: 20px;
+}
+
+.modalEvento{
+ border-radius: 0px;
+}
+
+#editnomEvento, #nuevEvento, #termEvento, #dupEvento, #iniEvento, #descripcion, #editrespEvento{
+  margin-bottom: -1px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-radius: 8px;
+  box-shadow:0px 0px;
+}
+
+#iniAnioMesEvento, #iniHoraEvento, #finAnioMesEvento, #finHoraEvento, #iniDiaEvento, #finDiaEvento{
+  margin-bottom: -1px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-radius: 8px;
+  box-shadow:0px 0px;
+  width: 49%;
+}
+#borrartexEvento, #agreEvento{
+  border-radius: 10px;
+}
+.col-sm-6 {
+  margin-left: -2%;
+  padding-right: 0px;
+}
