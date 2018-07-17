@@ -33,7 +33,7 @@
         <div class="menu-list">
             <ul id="menu-content" class="menu-content collapse out">
                 <li><a id="refresh-dash" href="#!/dash"><i class="fa fa-dashboard fa-lg"></i> Dashboard</a></li>
-								<?php if ($tipo_usuario == 'rh') {?>
+								<?php if ($tipo_usuario == 'rh' and 'administrador') {?>
 								<li  data-toggle="collapse" data-target="#products" class="collapsed">
                   <a><i class="fa fa-user-circle fa-lg"></i> Recursos Humanos <span class="arrow"></span></a>
                 </li>

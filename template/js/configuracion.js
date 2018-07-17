@@ -1,4 +1,4 @@
-//Agregar usuario con Jquery sin recargar
+//Añadir usuario
 $(document).ready(function() {
   $('#crear_usuario').click(function(event) {
     var url = "configuracion/guardar";
