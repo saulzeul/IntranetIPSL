@@ -12,9 +12,8 @@
   </a>
   <div class="container-fluid horizontal-navbar-container">
     <div class="dropdown active">
-      <a id="refresh-page" class="btn"><i class="glyphicon glyphicon-refresh "></i></a>
       <a class="btn dropdown-toggle horizontal-navbar-dropdown" type="button" id="dropdown-navbar" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-        <?php echo $nom_usuario; ?>
+        <i class="fa fa-user-circle"></i>
       </a>
       <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-navbar">
         <li><a href="#!/perfil">Perfil</a></li>

@@ -23,7 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */ //Si se va exportar al servidor cambiar a 'http://ipsl-adm-srv-02:8082/';
-$config['base_url'] = 'http://ipsl-adm-dsk-21/code-debian/';
+$config['base_url'] = 'http://ipsl-adm-dsk-21:8082/code-debian/';
 
 /*
 |--------------------------------------------------------------------------

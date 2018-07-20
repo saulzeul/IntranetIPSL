@@ -29,7 +29,7 @@ function main(){
           $('#no-login').fadeIn(500).delay(1500).fadeOut(300);
         }else{
           //Si se va exportar al servidor cambiar a  "http://ipsl-adm-srv-02:8082/panel#!/"+ encodeURIComponent(resp);
-          window.location.href = "http://ipsl-adm-dsk-21/code-debian/panel#!/"+ encodeURIComponent(resp);
+          window.location.href = "http://ipsl-adm-dsk-21:8082/code-debian/panel#!/"+ encodeURIComponent(resp);
         }
       }
     });
@@ -83,18 +83,13 @@ $(document).ready(function(){
   	url: "login/mostrarContactos",
   	getValue: function (element) {return "<p>" + "Nombre: " + $ (element) .prop ("contacto") + " </p> " + "<p>" + "Area: " + $ (element) .prop ("area") + " </p> " + "<p>" + "Extensión: " + $ (element) .prop ("extension") + "</p>" + "<p>" + "Email: " + $ (element) .prop ("correo") + "</p>";
 },
-
-
   	list: {
   		match: {
   			enabled: true
   		},
   		maxNumberOfElements: 4
   	},
-
   	theme: "square"
-
   };
-
   $("#round").easyAutocomplete(options);
 });

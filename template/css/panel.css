@@ -30,6 +30,23 @@
 .panel-title{
   font-family: 'Poppins', sans-serif;
 }
+
+.fa-plus{
+  float: right;
+  margin-top:-20px;
+}
+
+button{
+  padding: 2px 8px !important;
+}
+
+/*.input-group {
+  margin-bottom: 4%;
+}
+
+.input-group-addon:first-child{
+  font-size: smaller;
+}
 /* --------- Estilos Barra de navegacion Horizontal -------------*/
 
 .horizontal-navbar{
@@ -117,19 +134,6 @@
   margin: 0px;
   line-height: 35px;
   cursor: pointer;
-  /*
-    .collapsed{
-       .arrow:before{
-                 font-family: FontAwesome;
-                 content: "\f053";
-                 display: inline-block;
-                 padding-left:10px;
-                 padding-right: 10px;
-                 vertical-align: middle;
-                 float:right;
-            }
-     }
-*/
 }
 .nav-side-menu ul :not(collapsed) .arrow:before,
 .nav-side-menu li :not(collapsed) .arrow:before {
